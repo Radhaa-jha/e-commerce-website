@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Fashion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="wcss.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo"><i class="fas fa-shopping-bag"></i> MiniShop</a>
+            <ul class="nav-links">
+                <li><a onclick="window.location.href='wcloth.html';">Home</a></li>
+                <li><a href="#products">Women's Clothes</a></li>
+                <li><a onclick="window.location.href='mcloth.html'">Men's Clothes</a></li>
+                <li><a onclick="window.location.href='girl.html'">Girl's Clothes</a></li>
+                <li><a onclick="window.location.href='Boy.html'">Boy's Clothes</a></li>
+                <!--<li><a href="#" id="view-orders">My Orders</a></li>-->
+            </ul>
+
+            <div class="cart-icon" id="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <button id="btn">logout</button>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Women's Latest Collection</h1>
+            <p>Discover the latest trends in women's fashion</p>
+            <a href="#products" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <section id="products">
+        <h2 class="section-title">Our Collection</h2>
+        <div class="products">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Floral Summer Dress" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Floral Summer Dress</h3>
+                    <p class="product-price">$49.99</p>
+                    <div class="product-actions">
+                        <button class="btn" onclick="buyNow('Floral Summer Dress', 49.99, 'https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80')">Buy Now</button>
+                        <button class="btn btn-outline" onclick="addToCart('Floral Summer Dress', 49.99, 'https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Denim Jacket" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Denim Jacket</h3>
+                    <p class="product-price">$59.99</p>
+                    <div class="product-actions">
+                        <button class="btn" onclick="buyNow('Denim Jacket', 59.99, 'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80')">Buy Now</button>
+                        <button class="btn btn-outline" onclick="addToCart('Denim Jacket', 59.99, 'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="White Blouse" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">White Blouse</h3>
+                    <p class="product-price">$39.99</p>
+                    <div class="product-actions">
+                        <button class="btn" onclick="buyNow('White Blouse', 39.99, 'https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80')">Buy Now</button>
+                        <button class="btn btn-outline" onclick="addToCart('White Blouse', 39.99, 'https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1543076447-215ad9ba6923?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Black Evening Gown" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Black Evening Gown</h3>
+                    <p class="product-price">$89.99</p>
+                    <div class="product-actions">
+                        <button class="btn" onclick="buyNow('Black Evening Gown', 89.99, 'https://images.unsplash.com/photo-1543076447-215ad9ba6923?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80')">Buy Now</button>
+                        <button class="btn btn-outline" onclick="addToCart('Black Evening Gown', 89.99, 'https://images.unsplash.com/photo-1543076447-215ad9ba6923?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Casual T-shirt" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Casual T-shirt</h3>
+                    <p class="product-price">$29.99</p>
+                    <div class="product-actions">
+                        <button class="btn" onclick="buyNow('Casual T-shirt', 29.99, 'https://images.unsplash.com/photo-1539109136881-3be0616acf4b?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80')">Buy Now</button>
+                        <button class="btn btn-outline" onclick="addToCart('Casual T-shirt', 29.99, 'https://images.unsplash.com/photo-1539109136881-3be0616acf4b?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1551232864-3f0890e580d9?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Skinny Jeans" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Skinny Jeans</h3>
+                    <p class="product-price">$45.99</p>
+                    <div class="product-actions">
+                        <button class="btn" onclick="buyNow('Skinny Jeans', 45.99, 'https://images.unsplash.com/photo-1551232864-3f0890e580d9?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80')">Buy Now</button>
+                        <button class="btn btn-outline" onclick="addToCart('Skinny Jeans', 45.99, 'https://images.unsplash.com/photo-1551232864-3f0890e580d9?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Summer Skirt" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Summer Skirt</h3>
+                    <p class="product-price">$35.99</p>
+                    <div class="product-actions">
+                        <button class="btn" onclick="buyNow('Summer Skirt', 35.99, 'https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80')">Buy Now</button>
+                        <button class="btn btn-outline" onclick="addToCart('Summer Skirt', 35.99, 'https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 8 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Formal Blazer" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Formal Blazer</h3>
+                    <p class="product-price">$79.99</p>
+                    <div class="product-actions">
+                        <button class="btn" onclick="buyNow('Formal Blazer', 79.99, 'https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80')">Buy Now</button>
+                        <button class="btn btn-outline" onclick="addToCart('Formal Blazer', 79.99, 'https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shopping Cart Modal -->
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-header">
+            <h3 class="cart-title">Your Cart</h3>
+            <button class="close-cart" id="close-cart">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items will be added here dynamically -->
+        </div>
+        <div class="cart-total">
+            <div class="total-row">
+                <span class="total-title">Subtotal:</span>
+                <span class="total-price" id="cart-subtotal">$0.00</span>
+            </div>
+            <div class="total-row">
+                <span class="total-title">Shipping:</span>
+                <span class="total-price" id="cart-shipping">$5.00</span>
+            </div>
+            <div class="total-row">
+                <span class="total-title">Total:</span>
+                <span class="total-price" id="cart-total">$5.00</span>
+            </div>
+            <button class="checkout-btn" id="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Checkout Modal -->
+    <div class="checkout-modal" id="checkout-modal">
+        <div class="checkout-header">
+            <h3 class="checkout-title">Checkout</h3>
+            <button class="close-checkout" id="close-checkout">&times;</button>
+        </div>
+        <form id="checkout-form">
+            <div class="form-group">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" id="name" class="form-input" required>
+            </div>
+            <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" class="form-input" required>
+            </div>
+            <div class="form-group">
+                <label for="address" class="form-label">Shipping Address</label>
+                <input type="text" id="address" class="form-input" required>
+            </div>
+            <div class="form-group">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" id="phone" class="form-input" required>
+            </div>
+            <div class="payment-methods">
+                <h4>Payment Method</h4>
+                <div class="payment-method" onclick="selectPayment('credit-card')">
+                    <div class="payment-icon">
+                        <i class="far fa-credit-card"></i>
+                    </div>
+                    <div class="payment-details">
+                        <div class="payment-title">Credit/Debit Card</div>
+                        <div class="payment-desc">Pay with Visa, Mastercard, etc.</div>
+                    </div>
+                    <input type="radio" name="payment" id="credit-card" value="credit-card" checked hidden>
+                </div>
+                <div class="payment-method" onclick="selectPayment('cod')">
+                    <div class="payment-icon">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <div class="payment-details">
+                        <div class="payment-title">Cash on Delivery</div>
+                        <div class="payment-desc">Pay when you receive the order</div>
+                    </div>
+                    <input type="radio" name="payment" id="cod" value="cod" hidden>
+                </div>
+                <div class="payment-method" onclick="selectPayment('google-pay')">
+                    <div class="payment-icon">
+                        <i class="fab fa-google-pay"></i>
+                    </div>
+                    <div class="payment-details">
+                        <div class="payment-title">Google Pay</div>
+                        <div class="payment-desc">Pay with your Google Pay account</div>
+                    </div>
+                    <input type="radio" name="payment" id="google-pay" value="google-pay" hidden>
+                </div>
+            </div>
+            <button type="submit" class="place-order-btn">Place Order</button>
+        </form>
+    </div>
+
+    <!-- Order Confirmation Modal -->
+    <div class="order-confirmation" id="order-confirmation">
+        <div class="confirmation-icon">
+            <i class="fas fa-check-circle"></i>
+        </div>
+        <h3 class="confirmation-title">Order Confirmed!</h3>
+        <p class="confirmation-message">Thank you for your purchase. Your order has been placed successfully.</p>
+        <button class="btn" id="view-order-btn">View Order</button>
+        <button class="btn btn-outline" id="continue-shopping-btn">Continue Shopping</button>
+    </div>
+
+    <!-- Orders Page -->
+    <section class="orders-page hidden" id="orders-page">
+        <h2 class="section-title">My Orders</h2>
+        <div class="orders-list" id="orders-list">
+            <!-- Orders will be displayed here -->
+        </div>
+        <div class="empty-orders hidden" id="empty-orders">
+            <p>You haven't placed any orders yet.</p>
+            <a href="#products" class="btn">Shop Now</a>
+        </div>
+        <button class="btn btn-outline" id="back-to-shop">Back to Shop</button>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>MiniShop</h3>
+                <p>Your destination for the latest women's fashion trends and styles.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Shop</h3>
+                <ul class="footer-links">
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Dresses</a></li>
+                    <li><a href="#">Tops</a></li>
+                    <li><a href="#">Bottoms</a></li>
+                    <li><a href="#">Outerwear</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Help</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Customer Service</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Returns & Exchanges</a></li>
+                    <li><a href="#">Size Guide</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Email: info@elegance.com</a></li>
+                    <li><a href="#">Phone: +1 (555) 123-4567</a></li>
+                    <li><a href="#">Address: 123 Fashion St, New York</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; MiniShop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="wjs.js"> </script>
+    <script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
+  import { getAuth, signOut } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js";
+
+  //add your firebase config
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+
+  // Logout on button click
+  document.getElementById('btn').addEventListener('click', () => {
+    signOut(auth).then(() => {
+      alert("Logged out successfully!");
+      // Optional redirect
+       window.location.href = "login.html";
+    }).catch((error) => {
+      console.error("Logout error:", error);
+      alert("Error logging out.");
+    });
+  });
+</script>
+</body>
+</html>
